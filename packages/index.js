@@ -1,7 +1,6 @@
 import InputNumberExt from "./input-number-ext/index";
-import DatePickerExt from "./date-picker-ext/index";
 
-const components = [InputNumberExt, DatePickerExt];
+const components = [InputNumberExt];
 
 function install(Vue) {
   components.forEach((component) => {
@@ -13,6 +12,6 @@ if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 
-export { InputNumberExt, DatePickerExt };
+export { InputNumberExt };
 
 export default { install };
