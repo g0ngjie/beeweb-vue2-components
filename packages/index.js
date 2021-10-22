@@ -1,4 +1,5 @@
 import InputNumberExt from "./input-number-ext/index";
+import Confetti from "./confetti/index";
 
 const components = [InputNumberExt];
 
@@ -12,6 +13,6 @@ if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 
-export { InputNumberExt };
+export { InputNumberExt, Confetti };
 
 export default { install };

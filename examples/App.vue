@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import Animation from "./container/index";
 // const notThink = require("./notThink.jpg");
 export default {
   name: "App",
@@ -12,11 +11,10 @@ export default {
   },
   methods: {},
   mounted() {
-    const an = new Animation();
-    // an.start({ defaultType: "image", url: notThink, defaultSize: 60 });
-    an.start({ defaultType: "rect" });
+    // this.$confetti.start({ defaultType: "image", url: notThink, defaultSize: 60 });
+    this.$confetti.start({ defaultType: "rect" });
     setTimeout(() => {
-      an.stop();
+      this.$confetti.stop();
     }, 100);
   },
 };

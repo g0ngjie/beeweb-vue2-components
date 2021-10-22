@@ -1,12 +1,13 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
 
-import plugin from '../packages/index'
+import plugin, { Confetti } from "../packages/index";
 
-Vue.use(plugin)
+Vue.prototype.$confetti = new Confetti();
+Vue.use(plugin);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
