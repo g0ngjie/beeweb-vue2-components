@@ -7,12 +7,17 @@ export default new VueRouter({
   routes: [
     {
       path: "",
-      redirect: "/confetti",
+      redirect: "/testpaper",
     },
     {
       path: "/confetti",
       name: "confetti",
       component: () => import("./views/confetti/index.vue"),
+    },
+    {
+      path: "/testpaper",
+      name: "testpaper",
+      component: () => import("./views/testPaper/index.vue"),
     },
   ],
 });
