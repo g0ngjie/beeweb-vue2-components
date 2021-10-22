@@ -14,10 +14,5 @@ export default new VueRouter({
       name: "confetti",
       component: () => import("./views/confetti/index.vue"),
     },
-    {
-      path: "/testpaper",
-      name: "testpaper",
-      component: () => import("./views/testPaper/index.vue"),
-    },
   ],
 });

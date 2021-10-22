@@ -1,7 +1,6 @@
 import Confetti from "./confetti/index";
-import TestPaper from "./test-paper/index";
 
-const components = [TestPaper];
+const components = [];
 
 function install(Vue) {
   components.forEach((component) => {
@@ -13,6 +12,6 @@ if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 
-export { TestPaper, Confetti };
+export { Confetti };
 
 export default { install };
