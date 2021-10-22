@@ -1,38 +1,23 @@
 <template>
-  <div id="app">
-    <InputNumberExt />
-  </div>
+  <div id="app" style="width: 100%;height: 100%"></div>
 </template>
 
 <script>
-import { columns, rules } from "./mock";
-
+import Animation from "./container/index";
+// const notThink = require("./notThink.jpg");
 export default {
   name: "App",
   data() {
-    return {
-      formData: {},
-      form: {},
-      columns,
-      rules,
-    };
+    return {};
   },
   methods: {},
+  mounted() {
+    const an = new Animation();
+    // an.start({ defaultType: "image", url: notThink, defaultSize: 60 });
+    an.start({ defaultType: "rect" });
+    setTimeout(() => {
+      an.stop();
+    }, 100);
+  },
 };
 </script>
-<style scoped>
-.box-card {
-  margin: 10px 0;
-}
-.title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #303133;
-}
-p {
-  font-size: 13px;
-  color: #606266;
-  line-height: 20px;
-  padding-left: 20px;
-}
-</style>
