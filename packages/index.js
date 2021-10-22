@@ -1,7 +1,7 @@
-import InputNumberExt from "./input-number-ext/index";
 import Confetti from "./confetti/index";
+import TestPaper from "./test-paper/index";
 
-const components = [InputNumberExt];
+const components = [TestPaper];
 
 function install(Vue) {
   components.forEach((component) => {
@@ -13,6 +13,6 @@ if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
 
-export { InputNumberExt, Confetti };
+export { TestPaper, Confetti };
 
 export default { install };
